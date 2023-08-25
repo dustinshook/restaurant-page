@@ -1,1 +1,0 @@
-(()=>{"use strict";document.getElementById("content").appendChild((()=>{const e=document.createElement("div");return e.textContent="Landing Page",e})())})();

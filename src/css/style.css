@@ -1,4 +1,123 @@
-.warning {
-    color: red;
-    font-weight: bold;
+:root {
+    --primary-light: #ffffff;
+    --secondary-light: #f8f5f2;
+
+    /* colors */
+    --primary:  #FF4500;
+    --secondary: #228B22;
+    --accent: #FFD700;
+
+    --dark: #333;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('../assets/fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background-color: var(--primary-light);
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#header {
+    grid-row: 1;
+}
+
+#header .navbar {
+    background-color: var(--primary-light);
+    overflow: hidden;
+    border-top: 5px solid var(--primary);
+    border-bottom: 1px solid var(--secondary-light);
+    padding: 0.5em 1em;
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    align-items: baseline;
+}
+
+.navbar .nav-list .nav-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item.logo {
+    margin-right: auto;
+    font-size: 3.5rem;
+}
+
+li.nav-item {
+    padding: 0.5em;
+}
+
+#main {
+    grid-row: 2;
+}
+
+#main .message {
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em;
+    font-weight: 600;
+}
+
+#main .hero {
+    background: url('../assets/images/jarritos-mexican-soda-xkVOHCP-_6w-unsplash.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button {
+    background-color: var(--primary);
+    color: var(--primary-light);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

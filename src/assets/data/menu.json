@@ -1,0 +1,25 @@
+{
+    "restaurantName": "El Código Cantina",
+    "menu": {
+      "Appetizers": [
+        "Guacamole",
+        "Queso Fundido",
+        "Chicken Taquitos"
+      ],
+      "MainCourses": [
+        "Tacos al Pastor",
+        "Chicken Enchiladas",
+        "Veggie Burrito"
+      ],
+      "Desserts": [
+        "Churros",
+        "Tres Leches Cake",
+        "Flan"
+      ],
+      "Drinks": [
+        "Margarita",
+        "Horchata",
+        "Jarritos Mexican Soda"
+      ]
+    }
+  }

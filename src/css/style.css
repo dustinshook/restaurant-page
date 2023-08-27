@@ -41,7 +41,7 @@ body {
 
 #content {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 #header {
@@ -82,6 +82,11 @@ body {
 
 li.nav-item {
     padding: 0.5em;
+}
+
+li.nav-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #main {
@@ -135,6 +140,10 @@ li.nav-item {
     align-items: center;
 }
 
+.button:hover {
+    scale: 1.1;
+}
+
 /* content section */
 
 #main h1 {
@@ -168,3 +177,34 @@ li.nav-item {
     height: auto;
     border-radius: 0.25em;
 }
+
+#main .hero2 {
+    background-image: url('../assets/images/jarritos-mexican-soda-xxjHmSPxD1E-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: clamp(400px, 50vh, 800px);
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button.menu,
+.button.contact {
+    background-color: var(--secondary);
+}
+
+#footer {
+    width: 100%;
+    font-family: 'Lilita One', cursive;
+    border-top: 5px solid var(--secondary);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+};

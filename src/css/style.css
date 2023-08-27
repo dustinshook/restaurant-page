@@ -53,9 +53,13 @@ body {
     overflow: hidden;
     border-top: 5px solid var(--primary);
     border-bottom: 1px solid var(--secondary-light);
-    padding: 0.5em 1em;
+    padding: 0.5em 3em;
     font-family: 'Lilita One', cursive;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar .nav-list {
@@ -73,7 +77,7 @@ body {
 
 .nav-item.logo {
     margin-right: auto;
-    font-size: 3.5rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 li.nav-item {
@@ -82,6 +86,10 @@ li.nav-item {
 
 #main {
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #main .message {
@@ -94,17 +102,22 @@ li.nav-item {
     align-items: center;
     padding: 0.25em;
     font-weight: 600;
+    width: 100%;
 }
 
 #main .hero {
-    background: url('../assets/images/jarritos-mexican-soda-xkVOHCP-_6w-unsplash.jpg') no-repeat center center/cover;
-    height: 400px;
+    background-image: url('../assets/images/jarritos-mexican-soda-xkVOHCP-_6w-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: clamp(400px, 50vh, 800px);
     width: 100%;
     padding: 2em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -120,4 +133,38 @@ li.nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* content section */
+
+#main h1 {
+    margin: .5em 0;
+    font-family: 'Lilita One', cursive;
+    font-weight: normal;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.content-card {
+    background-color: var(--secondary-light);
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.content-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25em;
 }

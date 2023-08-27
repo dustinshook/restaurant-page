@@ -1,4 +1,9 @@
-import "../css/style.css"
+import "../css/style.css";
+import tacos from "../assets/images/jeswin-thomas-z_PfaGzeN9E-unsplash.jpg";
+import salsa from "../assets/images/victor-VTHliTT2XGI-unsplash.jpg";
+import sandwich from "../assets/images/jarritos-mexican-soda-vfn7tR6ogzU-unsplash.jpg";
+import carnitas from "../assets/images/jarritos-mexican-soda-HezPWdYzmwI-unsplash.jpg";
+
 
 const renderHeader = () => {
     const header = document.createElement('div');
@@ -36,6 +41,35 @@ const renderHeader = () => {
     return header;
 };
 
+const renderContentCards = (...images) => {
+    const contentCards = document.createElement('div');
+    contentCards.classList.add('content-cards');
+
+    images.forEach((image) => {
+        const contentCard = document.createElement('div');
+        contentCard.classList.add('content-card');
+        contentCards.appendChild(contentCard);
+
+        const img = document.createElement('img');
+        img.src = image;
+        contentCard.appendChild(img);
+
+        const cardText = document.createElement('div');
+        cardText.classList.add('card-text');
+        contentCard.appendChild(cardText);
+
+        const cardTextTitle = document.createElement('h2');
+        cardTextTitle.textContent = 'Tacos';
+        cardText.appendChild(cardTextTitle);
+
+        const cardTextDescription = document.createElement('p');
+        cardTextDescription.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quibusdam.';
+        cardText.appendChild(cardTextDescription);
+    });
+
+    return contentCards;
+};
+
 const renderMain = () => {
     const main = document.createElement('div');
     main.id = 'main';
@@ -45,7 +79,7 @@ const renderMain = () => {
     main.appendChild(message);
 
     const messageText = document.createElement('p');
-    messageText.textContent = 'Grand Opening! Come and enjoy our delicious food and drinks!';
+    messageText.textContent = 'Grand Opening!';
     message.appendChild(messageText);
     
     const hero = document.createElement('div');
@@ -56,6 +90,13 @@ const renderMain = () => {
     heroButton.classList.add('button');
     heroButton.textContent = 'Order Now';
     hero.appendChild(heroButton);
+
+    const contentTitle = document.createElement('h1');
+    contentTitle.textContent = 'Cantina favorites';
+    main.appendChild(contentTitle);
+
+    const contentCards = renderContentCards(tacos, salsa, sandwich, carnitas);
+    main.appendChild(contentCards);
 
     return main;
 };

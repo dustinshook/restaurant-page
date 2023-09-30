@@ -207,4 +207,195 @@ li.nav-item:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-};
+}
+
+/* menu section */
+
+.menu-container {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    font-family: 'Lilita One', cursive;
+    height: 100%;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.menu-container .menu-title {
+    font-size: 5rem;
+}
+
+
+.category-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+.menu-container .category-title {
+    font-size: 4rem;
+    border-bottom: 1px solid var(--secondary);
+    
+}
+
+.category-items {
+    list-style-type: none;
+}
+
+/* Appetizers */
+
+.category-items.appetizers .category-item:nth-child(1)::before {
+    content: "🥑";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.appetizers .category-item:nth-child(2)::before {
+    content: "🧀";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.appetizers .category-item:nth-child(3)::before {
+    content: "🍗";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+/* Main Courses */
+
+.category-items.maincourses .category-item:nth-child(1)::before {
+    content: "🌮";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.maincourses .category-item:nth-child(2)::before {
+    content: "🍗";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.maincourses .category-item:nth-child(3)::before {
+    content: "🌯";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+/* Desserts */
+
+.category-items.desserts .category-item:nth-child(1)::before {
+    content: "🍩";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.desserts .category-item:nth-child(2)::before {
+    content: "🍰";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.desserts .category-item:nth-child(3)::before {
+    content: "🍮";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+/* Drinks */
+
+.category-items.drinks .category-item:nth-child(1)::before {
+    content: "🍹";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.drinks .category-item:nth-child(2)::before {
+    content: "🥛";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.category-items.drinks .category-item:nth-child(3)::before {
+    content: "🥤";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+
+
+.category-item {
+    letter-spacing: 0.1em;
+}
+
+.menu-buttons-container,
+.contact-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* contact section */
+
+.contact-container {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    font-family: 'Lilita One', cursive;
+    height: 100%;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.contact-container .contact-title {
+    font-size: 5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.contact-container .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-text.email::before {
+    content: "📧";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+.contact-text.phone::before {
+    content: "📞";
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+

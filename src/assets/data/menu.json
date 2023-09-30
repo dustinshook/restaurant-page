@@ -1,25 +1,25 @@
 {
-    "restaurantName": "El Código Cantina",
+    "restaurantName": "Lunch Served All Day!",
     "menu": {
       "Appetizers": [
-        "Guacamole",
-        "Queso Fundido",
-        "Chicken Taquitos"
+        "Guacamole and Chips with Salsa ~ $6.00",
+        "Queso Fundido ~ $7.00",
+        "Chicken Taquitos ~ $8.00"
       ],
       "MainCourses": [
-        "Tacos al Pastor",
-        "Chicken Enchiladas",
-        "Veggie Burrito"
+        "Tacos al Pastor ~ $10.00",
+        "Chicken Enchiladas ~ $12.00",
+        "Veggie Burrito ~ $9.00"
       ],
       "Desserts": [
-        "Churros",
-        "Tres Leches Cake",
-        "Flan"
+        "Churros ~ $5.00",
+        "Tres Leches Cake ~ $6.00",
+        "Flan ~ $5.00"
       ],
       "Drinks": [
-        "Margarita",
-        "Horchata",
-        "Jarritos Mexican Soda"
+        "Margarita ~ $8.00",
+        "Horchata ~ $3.00",
+        "Jarritos Mexican Soda ~ $3.00"
       ]
     }
   }

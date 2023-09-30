@@ -79,6 +79,7 @@ const renderLowerSection = () => {
         const heroButton = document.createElement('div');
         heroButton.classList.add('button', item.toLowerCase());
         heroButton.textContent = item;
+        heroButton.id = item.toLowerCase();
         hero.appendChild(heroButton);
     });
 
